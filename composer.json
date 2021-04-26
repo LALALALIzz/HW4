@@ -12,7 +12,7 @@
 
     "autoload": {
         "psr-4": {
-            "zlytz\\hw4\\": ["src/"]
+            "zlytz\\hw4\\": "src/"
         }
     }
 }
