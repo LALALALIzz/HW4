@@ -1,0 +1,8 @@
+Issue Log
+ISSUE 1 : Create Git Repository, configure README, .gitignore and folders.
+ISSUE 2 : Successfully receive image URL from command line
+ISSUE 3 : Implement TileMaker.php
+ISSUE 4 : Implement Controller
+ISSUE 5 : Implement Model
+ISSUE 6 : Implement View
+ISSUE 7 ：Integrate the project and test
