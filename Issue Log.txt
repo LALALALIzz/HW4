@@ -1,6 +1,13 @@
 Issue Log
 ISSUE 1 : Create Git Repository, configure README, .gitignore and folders.
 ISSUE 2 : Successfully receive image URL from command line
+	## Problem 1 : Fail to find the controller class
+	## Problem cause : Include classname in its own namespace
+	## Problem solution : Altered the namespace for controller class
+	
+	##Problem 2 : Fail to access instance variable
+	##Problem cause : Used $instance_variable instead of $this->instance_variable
+	##Problem solution : Altered syntax
 ISSUE 3 : Implement TileMaker.php
 ISSUE 4 : Implement Controller
 ISSUE 5 : Implement Model

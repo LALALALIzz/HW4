@@ -11,12 +11,11 @@ class CommandController
         $this->imgURL = $url;
         $this->destFolder = $folder;
     }
-
+    
     function main()
     {
         echo $this->imgURL;
         echo $this->destFolder;
     }
-
 }
 ?>
