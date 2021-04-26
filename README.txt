@@ -1,7 +1,5 @@
 Work done individually
 
-Name : Liuyang Zheng
-SID : 011817429
-
+Author information is logged in file AuthInfo.txt
 
 ################################################
