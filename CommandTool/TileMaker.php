@@ -22,5 +22,5 @@ $imgURL = $argv[1];
 $destFolder = $argv[2];
 
 $imgController = new CommandController($imgURL, $destFolder);
-$imgController -> main();
+$imgController -> imgSlice();
 ?>

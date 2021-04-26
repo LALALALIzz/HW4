@@ -12,10 +12,9 @@ class CommandController
         $this->destFolder = $folder;
     }
     
-    function main()
+    function imgSlice()
     {
-        echo $this->imgURL;
-        echo $this->destFolder;
+        mkdir("../".$this->destFolder);
     }
 }
 ?>
