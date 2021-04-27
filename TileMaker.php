@@ -3,7 +3,7 @@
 namespace zlytz\hw4;
 
 use zlytz\hw4\Controllers\CommandController;
-require_once '../vendor/autoload.php';
+require_once './vendor/autoload.php';
 
 $paraCount = count($argv);
 if($paraCount < 3)

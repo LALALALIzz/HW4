@@ -8,7 +8,13 @@ ISSUE 2 : Successfully receive image URL from command line
 	##Problem 2 : Fail to access instance variable
 	##Problem cause : Used $instance_variable instead of $this->instance_variable
 	##Problem solution : Altered syntax
-ISSUE 3 : Implement TileMaker.php
+ISSUE 3 : Implement TileMaker.php, CommandController.php
+	##Problem 1 : Fail to add GD library
+	##Problem cause : GD support is disabled by default
+	##Problem solution : Uncomment 'extention = gd' in php.ini (php above 7.2 prefers module name instead of extention file name)
+		##Sub-problem 1 : GD still doesn't work after uncommenting the extension in php.ini
+		##Sub-problem 1 cause : The actual loaded php.ini is not the one I modified.
+		##Sub-problem 1 solution : run phpinfo() to see the actual loaded php.ini and modify the file and php config setting as well.
 ISSUE 4 : Implement Controller
 ISSUE 5 : Implement Model
 ISSUE 6 : Implement View
