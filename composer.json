@@ -11,6 +11,10 @@
     },
 
     "autoload": {
+        "files": [
+
+            "src/support/helpers.php"
+        ],
         "psr-4": {
             "zlytz\\hw4\\": "src/"
         }

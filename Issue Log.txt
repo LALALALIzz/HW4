@@ -8,7 +8,7 @@ ISSUE 2 : Successfully receive image URL from command line
 	##Problem 2 : Fail to access instance variable
 	##Problem cause : Used $instance_variable instead of $this->instance_variable
 	##Problem solution : Altered syntax
-ISSUE 3 : Implement TileMaker.php, CommandController.php
+ISSUE 3 : Implement image slice functionality
 	##Problem 1 : Fail to add GD library
 	##Problem cause : GD support is disabled by default
 	##Problem solution : Uncomment 'extention = gd' in php.ini (php above 7.2 prefers module name instead of extention file name)

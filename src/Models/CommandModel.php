@@ -14,12 +14,6 @@ class CommandModel
         
     }
 
-    function test()
-    {
-        $tarimg = imagecreatefromjpeg($this->imgURL);
-        imagejpeg($tarimg, $this->newDir."/test.jpg");
-    }
-
     function imageSlicetoNum2($sliceNum, $prefix)
     {   
         $tarimg = imagecreatefromjpeg($this->imgURL);
