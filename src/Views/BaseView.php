@@ -61,9 +61,5 @@ class BaseView extends View
         </html>
         <?php     
     }
-
-
-
 }
-
 ?>

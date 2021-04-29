@@ -8,10 +8,13 @@ class BaseController extends Controller
     private $view;
     private $model;
 
-    function index()
+    function __construct()
     {
         $this->view = new BaseView();
         $this->model = new BaseModel();
+    }
+    function index()
+    {
         $picstream = $this->model->getdata();
         $this->view->setdata($picstream);
         $this->view->render();
