@@ -47,7 +47,6 @@ class CoordModel extends Model
                 }
             }         
         }
-    
         return $this->picstream;        
     }
 }
