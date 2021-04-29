@@ -17,7 +17,7 @@ class BaseView extends View
         <!doctype html>
         <html>
         <head>
-        <meta charset='UTF-8'>
+        <meta charset='UTF-8' />
         <script>
         function isEmpty(val)
         {
@@ -47,9 +47,9 @@ class BaseView extends View
         <h1>Simple Tile Server</h1>
         <div>
         <form name = "coordForm" onsubmit = "return validate();" method = "post">
-        Coordination : <input type = "text" name = "coord">
-        <input type = "hidden" name = "input" value = "gotoCoord">
-        <input type = "submit" name = "coordSubm" value = "Go!">
+        Coordination : <input type = "text" name = "coord" />
+        <input type = "hidden" name = "input" value = "gotoCoord" />
+        <input type = "submit" name = "coordSubm" value = "Go!" />
         </form>
         </div>
         <div>

@@ -16,10 +16,11 @@ class CoordModel extends Model
     {
         $coords = array();
         $coords = explode(",", $this->coord);
-        $x = $coords[0]-1;
-        $y = $coords[1]-1;
+        
         if(count($coords)==2)
         {
+            $x = $coords[0]-1;
+            $y = $coords[1]-1;
             $subcoords = array();
             for($i=0; $i<3; $i++)
             {
@@ -46,6 +47,7 @@ class CoordModel extends Model
                 }
             }         
         }
+    
         return $this->picstream;        
     }
 }
