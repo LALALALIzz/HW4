@@ -19,15 +19,25 @@ class BaseView extends View
         <head>
         <meta charset='UTF-8'>
         <script>
+        function isEmpty(val)
+        {
+            return (val === undefined || val == null || val.length <= 0) ? true : false;
+        }
         function validate()
         {
             var coord = document.forms['coordForm']['coord'].value;
             var coords = coord.split(',');
             for(i = 0; i < coords.length; i++)
             {
-                if(coords[i] > 3 || coords[i] < 0)
+                if((coords.length !=2 && coords.length != 4)||coords[i] > 3 || coords[i] < 0)
                 {
                     alert('Invalid Coordination !');
+                    return false;
+                }
+                else if(isEmpty(coord))
+                {
+                    alert('Empty Coordination !');
+                    return false;
                 }
             }
         }
@@ -36,7 +46,7 @@ class BaseView extends View
         <body>
         <h1>Simple Tile Server</h1>
         <div>
-        <form name = "coordForm" action="./index.php" onsubmit = "return validate();" method = 'post'>
+        <form name = "coordForm" onsubmit = "return validate();" method = "post">
         Coordination : <input type = "text" name = "coord">
         <input type = "hidden" name = "input" value = "gotoCoord">
         <input type = "submit" name = "coordSubm" value = "Go!">

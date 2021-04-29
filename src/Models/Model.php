@@ -1,8 +1,8 @@
 <?php
-namespace zlytz\hw4\Models\Model;
+namespace zlytz\hw4\Models;
 
 abstract class Model
 {
-    abstract function getData();
+    abstract function getdata();
 }
 ?>

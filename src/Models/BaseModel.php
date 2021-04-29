@@ -11,7 +11,7 @@ class BaseModel
         {
             for($j = 0; $j < 3; $j++)
             {
-                $this->picstream[$i][$j] = "images/blank.jpg";
+                $this->picstream[$i][$j] = "images/".$i.$j.".jpg";
             }
         }
         return $this->picstream;
